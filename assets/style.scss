@@ -1,0 +1,112 @@
+//Primary Colors
+$bright-orange: rgb(227, 136, 38);
+$dark-cyan: rgb(0, 105, 112) ;
+$vd-cyan: rgb(0, 66, 65);
+
+//Neutral Colors
+$transparent-white: rgba(255, 255, 255, 0.75);
+$vl-gray:  rgb(242, 242, 242);   
+
+
+$font-family-1: 'Big Shoulders Display', cursive;
+$font-family-2: 'Lexend Deca', sans-serif;
+
+body{
+    font-size: 15px;
+    font-family: $font-family-2;
+    font-weight: 400;
+    background-color: $vl-gray;
+}
+
+main{
+    max-width: 325px;
+    margin: auto;
+    min-height: calc(100vh - 100px);
+    padding: 50px 0;
+}
+
+section{
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    // margin-top: 50px;
+    // margin-bottom: 50px;
+    color: $transparent-white;
+
+    h2{
+        font-family: $font-family-1;
+        font-weight: 700;
+        font-size: 35px;
+        text-transform: uppercase;
+        color: $vl-gray;
+        margin: 30px 0px;
+    }
+
+    div{
+        padding: 48px;
+    }
+
+    p{
+        line-height: 1.6;
+    }
+
+    div:nth-child(1){
+        background-color: $bright-orange;
+
+        button{
+            color: $bright-orange;
+        }
+    }
+
+    div:nth-child(2){
+        background-color: $dark-cyan;
+
+        button{
+            color: $dark-cyan;
+        }
+    }
+
+    div:nth-child(3){
+        background-color: $vd-cyan;
+
+        button{
+            color: $vd-cyan;
+        }
+    }
+}
+
+button{
+    background: $vl-gray;
+    font-family: $font-family-2;
+    border: 2px solid $vl-gray;
+    border-radius: 25px;
+    margin-top: 25px;
+    width: 145px;
+    height: 50px;
+
+    &:hover{
+        background: none;
+        color: $vl-gray!important;
+        cursor: pointer;
+    }
+}
+
+.top-picture{
+    background: none!important;
+    padding: 0;
+}
+
+
+@media screen and (min-width: 980px) {
+    main{
+        max-width: 920px;
+    }
+    section{
+        flex-direction: row;
+    }
+    button{
+        margin-top: 80px;
+    }
+}
+

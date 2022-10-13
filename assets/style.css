@@ -1,0 +1,85 @@
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  background-color: rgb(242, 242, 242);
+}
+
+main {
+  max-width: 325px;
+  margin: auto;
+  min-height: calc(100vh - 100px);
+  padding: 50px 0;
+}
+
+section {
+  overflow: hidden;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.75);
+}
+section h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: rgb(242, 242, 242);
+  margin: 30px 0px;
+}
+section div {
+  padding: 48px;
+}
+section p {
+  line-height: 1.6;
+}
+section div:nth-child(1) {
+  background-color: rgb(227, 136, 38);
+}
+section div:nth-child(1) button {
+  color: rgb(227, 136, 38);
+}
+section div:nth-child(2) {
+  background-color: rgb(0, 105, 112);
+}
+section div:nth-child(2) button {
+  color: rgb(0, 105, 112);
+}
+section div:nth-child(3) {
+  background-color: rgb(0, 66, 65);
+}
+section div:nth-child(3) button {
+  color: rgb(0, 66, 65);
+}
+
+button {
+  background: rgb(242, 242, 242);
+  font-family: "Lexend Deca", sans-serif;
+  border: 2px solid rgb(242, 242, 242);
+  border-radius: 25px;
+  margin-top: 25px;
+  width: 145px;
+  height: 50px;
+}
+button:hover {
+  background: none;
+  color: rgb(242, 242, 242) !important;
+  cursor: pointer;
+}
+
+.top-picture {
+  background: none !important;
+  padding: 0;
+}
+
+@media screen and (min-width: 980px) {
+  main {
+    max-width: 920px;
+  }
+  section {
+    flex-direction: row;
+  }
+  button {
+    margin-top: 80px;
+  }
+}/*# sourceMappingURL=style.css.map */
